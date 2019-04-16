@@ -46,6 +46,7 @@ class Circle(object):
         rfl2 = -reflection(ray.direction, n2)
         rfr1 = -refraction(ray.direction, n1, en1, en2)
         rfr2 = -refraction(ray.direction, n2, en2, en1)
+        print(f"Length: {t1} ; {t2}")
         return r1, r2, rfl1, rfl2, rfr1, rfr2, n1, n2
 
     def draw_intersection(self, ray, on1, on2, figure="Fig"):
@@ -66,5 +67,5 @@ class Circle(object):
         plt.plot([r2[0], r2[0] - rfr2[0]],
                  [r2[1], r2[1] - rfr2[1]], label="Ray")
         plt.plot()
-        print("Sphere int. point: {}".format(r1))
+        print(f"Sphere int. point: {r1} ; {r2}")
         return ray_plt, n1_plt, n2_plt

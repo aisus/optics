@@ -70,8 +70,10 @@ class Ellipse(object):
         reflection2, = plt.plot([r2[0], r2[0] - refl2[0]], [r2[1], r2[1] - refl2[1]])
         refraction, = plt.plot([r[0], r[0] - refr[0]], [r[1], r[1] - refr[1]])
         refraction2, = plt.plot([r2[0], r2[0] - refr2[0]], [r2[1], r2[1] - refr2[1]])
-        plt.legend([ray_lgnd, normal1, normal2],
-                   ["Ray", "Normal1", "Normal2"])
+        print(f"intersections: {r}, {r2}")
+        print(f"Length: {t[0]} ; {t[1]}")
+        #plt.legend([ray_lgnd, normal1, normal2],
+         #          ["Ray", "Normal1", "Normal2"])
         # a = np.array([np.cos(a), np.sin(a)])
 
     def draw_intersection(self, ray: Ray, nn1, nn2, figure="Fig"):

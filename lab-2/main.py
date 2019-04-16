@@ -3,81 +3,102 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def gauss_beam(x: float):
+def gauss_beam(x):
     return np.exp(-np.pi * (x**2))
 
 
 def custom_func(x: float):
-    if abs(x) > 0.5:
+    # if abs(x) > 0.5:
+    #     return 0
+    # return (x - 1) / 4
+    if x > 3 or x < -1:
         return 0
-    return (x - 1) / 4
+    return 1
 
 
-def anal_integral(x: float, ksi: float):
-    return np.exp(-6 * np.pi * 1j * ksi) - np.exp(-2 * np.pi * 1j * ksi)
+def custom_func_fourier(x: float, ksi: float):
+    return (2 * np.sqrt(2 / np.pi) * np.sin(ksi) * np.cos(ksi) * (np.cos(ksi) + 1j * np.sin(ksi))) / ksi
+    #return np.exp(-2*np.pi*1j*ksi) * np.sin(4 * np.pi * ksi) / np.pi * ksi
 
-
-def finit_fourier(f, step: float, xs: List[float]) -> List[float]:
+def fourier_builitn(f, step: float, xs: List[float]) -> List[float]:
     fs = list(map(lambda x: f(x), xs))
     fs = np.fft.fftshift(fs)
     fourier = list(map(lambda x: x * step, np.fft.fft(fs)))
     return np.fft.fftshift(fourier)
 
 
-def calculus_exp(u: float, x: float) -> float:
+def fourier_exp(u: float, x: float) -> float:
     return np.exp(-2 * np.pi * 1j * u * x)
 
 
-def calculus_fourier(f, step: float, xs: [float],
-                     us: List[float]) -> List[float]:
+def fourier_calc(f, step: float, xs: [float],
+                 us: List[float]) -> List[float]:
     fourier = []
     for u in us:
         newx = 0
         for x in xs:
-            newx += f(x) * calculus_exp(u, x)
+            newx += f(x) * fourier_exp(u, x)
         newx *= step
         fourier.append(newx)
     return fourier
 
 
-def plot_calculus(f, a: float, b: float, step_count: int):
-    step_src = (abs(b) + abs(a)) / step_count
-    c = step_count / (2 * (abs(a) + abs(b)))
+def plot_calculus(f, a: float, b: float, step_count: int, fig_name):
+    step_src = abs(b - a) / step_count
+    c = step_count / (2 * abs(b - a))
     step = (2 * abs(c)) / step_count
     us = np.arange(-c, c, step)
     xs = np.arange(a, b, step_src)
-    print(xs[0], xs[-1])
-    print(us[0], us[-1])
-    fourier = calculus_fourier(f, step_src, xs, us)
-    print(f"Calculus => {fourier[:4]}")
-    phase = list(map(np.angle, fourier))
-    amplitude = list(map(abs, fourier))
-    plt.figure("Phase fft")
+    fourier = fourier_calc(f, step_src, xs, us)
+    phase = np.angle(fourier)
+    amplitude = np.abs(fourier)
+    #print(f"Calculus => {fourier[:4]}")
+    plt.figure(f"Phase {fig_name}")
     plt.plot(us, phase)
     plt.grid()
-    plt.figure("Amplitude fft")
+    plt.figure(f"Amplitude {fig_name}")
     plt.plot(us, amplitude)
     plt.grid()
 
 
-def plot_fft(f, a: float, b: float, step_count: int):
-    step = (abs(a) + abs(b)) / step_count
-    xs = np.arange(a, b, step)
-    fourier = finit_fourier(f, step, xs)
-    print(f"FFT => {fourier[:4]}")
-    phase = list(map(np.angle, fourier))
-    amplitude = list(map(abs, fourier))
-    plt.figure("Phase fft")
-    plt.plot(xs, phase)
+def plot_fft(f, a: float, b: float, step_count: int, fig_name):
+    step_src = (b - a) / step_count
+    c = step_count / (2 * (abs(a) + abs(b)))
+    step = (2 * abs(c)) / step_count
+    #  step = (abs(a) + abs(b)) / step_count
+    xs = np.arange(a, b, step_src)
+    nxs = np.arange(-c, c, step)
+    fourier = fourier_builitn(f, step_src, xs)
+    phase = np.angle(fourier)
+    amplitude = np.abs(fourier)
+    plt.figure(f"Phase {fig_name}")
+    plt.plot(nxs, phase)
     plt.grid()
-    plt.figure("Amplitude fft")
-    plt.plot(xs, amplitude)
+    plt.figure(f"Amplitude {fig_name}")
+    plt.plot(nxs, amplitude)
+    plt.grid()
+
+
+def plot_complex_function(f, a, b, step_count, fig_name):
+    c = step_count / (2 * (abs(a) + abs(b)))
+    step = (2 * abs(c)) / step_count
+    nxs = np.arange(-c, c, step)
+    us = np.arange(-c, c, step)
+    ys = f(nxs, us)
+    amplitude = np.abs(ys)
+    phase = np.angle(ys)
+    plt.figure(f"Phase {fig_name}")
+    plt.plot(nxs, phase)
+    plt.grid()
+    plt.figure(f"Amplitude {fig_name}")
+    plt.plot(nxs, amplitude)
     plt.grid()
 
 
 if __name__ == "__main__":
-    #plot_fft(gauss_beam, -5, 5, 256)
-    #plot_calculus(gauss_beam, -5, 5, 256)
-    plot_fft(custom_func, -5, 5, 256)
-    plot_calculus(custom_func, -5, 5, 256)
+    #plot_fft(gauss_beam, -5, 5, 512, "gauss")
+    #plot_calculus(gauss_beam, -5, 5, 512, "gauss")
+    plot_fft(custom_func, -5, 5, 512, "custom")
+    # plot_calculus(custom_func, -5, 5, 512, "custom")
+    plot_complex_function(custom_func_fourier, -5, 5, 512, "custom")
     plt.show()

@@ -9,8 +9,9 @@ def gauss_beam(x):
 
 def bokunofunction(x):
     #  x = x * 4
-    return np.exp(2 * np.pi * 1j * x) + np.exp(-5 * np.pi * 1j * x)
-
+    if abs(x) > 0.5:
+        return 0
+    return (x - 1) / 4
 
 def finit_fourier(f, step: float, xs: List[float]) -> List[float]:
     """finit_fourier
@@ -51,12 +52,13 @@ def calculus_exp(u: float, x: float) -> float:
     return np.exp(-2 * np.pi * 1j * u * x)
 
 
-def analit_func(a, b, u):
-    return (np.exp(-2 * np.pi * 1j * b * (u - 1)) - np.exp(
-        -2 * np.pi * 1j * a * (u - 1))) / (-2 * np.pi * 1j * (u - 1)) + (
-            (np.exp(-2 * np.pi * 1j * b *
-                    (u + 2.5)) - np.exp(-2 * np.pi * 1j * a * (u + 2.5))) /
-            (-2 * np.pi * 1j * (u + 2.5)))
+def analit_func(a, b, ksi):
+    return (2 * np.sqrt(2 / np.pi) * np.sin(ksi) * np.cos(ksi) * (np.cos(ksi) + 1j * np.sin(ksi))) / ksi
+    # return (np.exp(-2 * np.pi * 1j * b * (u - 1)) - np.exp(
+    #     -2 * np.pi * 1j * a * (u - 1))) / (-2 * np.pi * 1j * (u - 1)) + (
+    #         (np.exp(-2 * np.pi * 1j * b *
+    #                 (u + 2.5)) - np.exp(-2 * np.pi * 1j * a * (u + 2.5))) /
+    #         (-2 * np.pi * 1j * (u + 2.5)))
 
 
 def calculus_fourier(f, step: float, xs: [float],
@@ -151,9 +153,9 @@ def plot_complex(f, a, b, step_count, fig="Source"):
 
 
 if __name__ == "__main__":
-    #  plot_function(gauss_beam, -5, 5, 512, "frf")
-    #  plot_fft(gauss_beam, -5, 5, 512, "frf")
-    #  plot_calculus(gauss_beam, -5, 5, 512, "frf")
+    # plot_function(gauss_beam, -5, 5, 512, "frf")
+    # plot_fft(gauss_beam, -5, 5, 512, "frf")
+    # plot_calculus(gauss_beam, -5, 5, 512, "frf")
     plot_fft(bokunofunction, -5, 5, 256, "byaka")
     plot_calculus(bokunofunction, -5, 5, 256, "byaka")
     plot_complex(lambda x: analit_func(-5, 5, x), -5, 5, 256, "byaka")

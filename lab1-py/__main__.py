@@ -30,8 +30,8 @@ def circle_example(ray, n1, n2):
 
 def ellipse_example(ray, n1, n2):
     ellipse = Ellipse(
-        origin=[1, 2],
-        a=3,
+        origin=[2, 2],
+        a=4,
         b=2
     )
     ray.origin = [ray.origin[0], ray.origin[1]]
@@ -47,6 +47,6 @@ if __name__ == "__main__":
         direction=[1, 2, 0]
     )
     # plane_example(ray, 0.5, 0.5)
-    circle_example(ray, -0.9, 0.45)
-    # ellipse_example(ray, 1.2, 1)
+    # circle_example(ray, 1.5, 1)
+    ellipse_example(ray, 1, 1.5)
     plt.show()
