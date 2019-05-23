@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.09.0 (MiKTeX 2.9.6880 64-bit)  (format=lualatex 2019.4.14)  14 APR 2019 18:36
+This is LuaTeX, Version 1.09.0 (MiKTeX 2.9.6880 64-bit)  (format=lualatex 2019.4.14)  22 MAY 2019 14:45
  restricted system commands enabled.
 **kursach.tex
 (./kursach.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.832 seconds
+luaotfload | main : initialization completed in 0.812 seconds
 
 ("C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/tex/latex/extsizes/extarticle
 .cls"
@@ -1050,7 +1050,11 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'russian'.
- (./kursach.aux)
+ (./kursach.aux
+
+LaTeX Warning: Label `gauss' multiply defined.
+
+)
 \openout1 = kursach.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 223.
@@ -1247,30 +1251,36 @@ LaTeX Info: Redefining \nameref on input line 223.
 
 {C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
 [3]
-<images/gauss.png, id=44, 1204.5pt x 903.375pt>
-File: images/gauss.png Graphic file (type png)
-<use images/gauss.png>
-Package luatex.def Info: images/gauss.png  used on input line 347.
-(luatex.def)             Requested size: 448.1309pt x 336.10442pt.
-<images/gauss_check.png, id=46, 1204.5pt x 903.375pt>
+<images/Amplitude_gauss.png, id=43, 462.528pt x 346.896pt>
+File: images/Amplitude_gauss.png Graphic file (type png)
+<use images/Amplitude_gauss.png>
+Package luatex.def Info: images/Amplitude_gauss.png  used on input line 347.
+(luatex.def)             Requested size: 448.1309pt x 336.11288pt.
+<images/Phase_gauss.png, id=44, 462.528pt x 346.896pt>
+File: images/Phase_gauss.png Graphic file (type png)
+<use images/Phase_gauss.png>
+Package luatex.def Info: images/Phase_gauss.png  used on input line 353.
+(luatex.def)             Requested size: 448.1309pt x 336.11288pt.
+ [4<./images/Amplitude_gauss.png>]
+<images/gauss_check.png, id=59, 1204.5pt x 903.375pt>
 File: images/gauss_check.png Graphic file (type png)
 <use images/gauss_check.png>
-Package luatex.def Info: images/gauss_check.png  used on input line 357.
+Package luatex.def Info: images/gauss_check.png  used on input line 363.
 (luatex.def)             Requested size: 448.1309pt x 336.10442pt.
- [4<./images/gauss.png>]
-<images/gauss_compare.png, id=63, 1204.5pt x 903.375pt>
+ [5<./images/Phase_gauss.png>]
+<images/gauss_compare.png, id=71, 1204.5pt x 903.375pt>
 File: images/gauss_compare.png Graphic file (type png)
 <use images/gauss_compare.png>
-Package luatex.def Info: images/gauss_compare.png  used on input line 378.
+Package luatex.def Info: images/gauss_compare.png  used on input line 384.
 (luatex.def)             Requested size: 448.1309pt x 336.10442pt.
- [5<./images/gauss_check.png>]
-<images/my_fft.png, id=74, 1204.5pt x 903.375pt>
+ [6<./images/gauss_check.png>]
+<images/my_fft.png, id=82, 1204.5pt x 903.375pt>
 File: images/my_fft.png Graphic file (type png)
 <use images/my_fft.png>
-Package luatex.def Info: images/my_fft.png  used on input line 390.
+Package luatex.def Info: images/my_fft.png  used on input line 396.
 (luatex.def)             Requested size: 448.1309pt x 336.10442pt.
- [6<./images/gauss_compare.png>]
-Overfull \hbox (1.67993pt too wide) in paragraph at lines 397--398
+ [7<./images/gauss_compare.png>]
+Overfull \hbox (1.67993pt too wide) in paragraph at lines 403--404
 []\TU/TimesNewRoman(0)/m/n/12 Най-дём ана-ли-ти-че-скую ф
 ор-му для пре-об-ра-зо-ва-ния Фу-рье функ-ции 
 $\OT1/cmr/m/n/12 (4\OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 2)\O
@@ -1278,22 +1288,22 @@ ML/cmm/m/it/12 e[]$\TU/TimesNewRoman(0)/m/n/12 .
  []
 
 
-Overfull \hbox (7.0572pt too wide) detected at line 409
+Overfull \hbox (7.0572pt too wide) detected at line 415
   $[] []\OT1/cmr/m/n/12 (8\OML/cmm/m/it/12 t[] \OMS/cmsy/m/n/12   \OT1/cmr/m/n/
 12 2)\OML/cmm/m/it/12 e[]e[] dt \OT1/cmr/m/n/12 = 2[](4 [] \OML/cmm/m/it/12 t[]
 e[]e[] dt \OMS/cmsy/m/n/12   [] \OML/cmm/m/it/12 e[]e[] dt\OT1/cmr/m/n/12 )$  
  []
 
-[7
+[8
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.0
 .3'
 <./images/my_fft.png>]
-<images/full_solution.png, id=100, 1204.5pt x 903.375pt>
+<images/full_solution.png, id=108, 1204.5pt x 903.375pt>
 File: images/full_solution.png Graphic file (type png)
 <use images/full_solution.png>
-Package luatex.def Info: images/full_solution.png  used on input line 459.
+Package luatex.def Info: images/full_solution.png  used on input line 465.
 (luatex.def)             Requested size: 448.1309pt x 336.10442pt.
- [8
+ [9
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.0
 .6'
 
@@ -1302,30 +1312,33 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.0
 
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.0
 .6'
-] [9<./images/full_solution.png>] [10] 
+] [10<./images/full_solution.png>] [11] 
 AED: lastpage setting LastPage
-[11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 490.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 490.
+[12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 496.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 496.
  (./kursach.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 490.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 490.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 496.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 496.
 Package rerunfilecheck Info: File `kursach.out' has not changed.
-(rerunfilecheck)             Checksum: 3C4EFC41019C342FBAB5B59C2E3A53FD;259.
+(rerunfilecheck)             Checksum: D980A6E8885A410693992E756FA5D535;259.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 )
 
 Here is how much of LuaTeX's memory you used:
- 26389 strings out of 494324
+ 26408 strings out of 494324
  100000,662416 words of node,token memory allocated
  621 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 8 kern, 1 glyph, 21 attribute, 61 glue_spec
 , 21 attribute_list, 2 write nodes
    avail lists: 1:2,2:376,3:114,4:30,5:294,6:25,7:1905,8:69,9:291,10:9,11:292
- 29725 multiletter control sequences out of 65536+200000
+ 29729 multiletter control sequences out of 65536+200000
  58 fonts using 15637247 bytes
  47i,12n,91p,816b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/WINDOWS/Fonts/timesi.ttf><C:/WINDOWS/Fonts/times.ttf><C:/WINDOWS/Fonts/times
@@ -1341,9 +1354,9 @@ lic/amsfonts/cm/cmr8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/User/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on kursach.pdf (11 pages, 383802 bytes).
+Output written on kursach.pdf (12 pages, 464275 bytes).
 
-PDF statistics: 182 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 131072)
+PDF statistics: 190 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 131072)
  9 words of extra memory for PDF output out of 10000 (max. 100000000)
 

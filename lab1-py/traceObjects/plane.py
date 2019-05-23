@@ -9,6 +9,24 @@ class Plane(object):
     def __init__(self, normal, radius_vec):
         self.normal = normalize(np.array(normal))
         self.radius_vec = np.array(radius_vec)
+        self.normal = np.array(self.norm_v(normal))
+        print(self.get_len(normal))
+
+        #  модуль вектора
+
+    def get_len(self, v):
+        result = 0
+        for i in range(len(v)):
+            result += v[i] ** 2
+        return np.sqrt(result)
+
+    # нормировка
+    def norm_v(self, v):
+        l = self.get_len(v)
+        for i in range(len(v)):
+            v[i] = v[i] / l
+        return v
+
 
     def draw(self, figure="Fig"):
         plt.figure(figure)
@@ -46,6 +64,7 @@ class Plane(object):
             refraction_fig, = plt.plot([intersection[0], refraction[0]], [intersection[1], refraction[1]],
                                        label="Refracted ray")
             print("Plane int. point: {}".format(intersection))
+            print(f"len: {self.get_len(intersection)}")
             return ray_fig, reflection_fig, refraction_fig
         else:
             print("No intersection found")

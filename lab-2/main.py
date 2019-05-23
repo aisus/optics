@@ -16,9 +16,16 @@ def custom_func(x: float):
     return 1
 
 
-def custom_func_fourier(x: float, ksi: float):
-    return (2 * np.sqrt(2 / np.pi) * np.sin(ksi) * np.cos(ksi) * (np.cos(ksi) + 1j * np.sin(ksi))) / ksi
-    #return np.exp(-2*np.pi*1j*ksi) * np.sin(4 * np.pi * ksi) / np.pi * ksi
+def custom_func_fourier(x: float, xi: float):
+    # return (2 * np.sqrt(2 / np.pi) * np.sin(xi) * np.cos(xi) * (np.cos(xi) + 1j * np.sin(xi))) / xi
+    # return np.exp(-2*np.pi*1j*xi) * np.sin(4 * np.pi * xi) / np.pi * xi
+    
+    flags = np.abs(xi) < 1e-6
+    around_zero = 4 * 1j 
+    others = -1/(2 * np.pi * xi) * (np.exp(-6 * np.pi * x * 1j * xi) - (np.exp(2 * np.pi * x * 1j * xi)))
+
+    return others * (1-flags) + around_zero * flags
+
 
 def fourier_builitn(f, step: float, xs: List[float]) -> List[float]:
     fs = list(map(lambda x: f(x), xs))
@@ -96,9 +103,10 @@ def plot_complex_function(f, a, b, step_count, fig_name):
 
 
 if __name__ == "__main__":
-    #plot_fft(gauss_beam, -5, 5, 512, "gauss")
+    plot_fft(gauss_beam, -5, 5, 512, "gauss")
     #plot_calculus(gauss_beam, -5, 5, 512, "gauss")
-    plot_fft(custom_func, -5, 5, 512, "custom")
-    # plot_calculus(custom_func, -5, 5, 512, "custom")
-    plot_complex_function(custom_func_fourier, -5, 5, 512, "custom")
+    #plot_fft(custom_func, -5, 5, 512, "custom")
+    #plot_calculus(custom_func, -5, 5, 512, "custom")
+    #plot_complex_function(custom_func_fourier, -5, 5, 512, "custom")
+    #plot_complex_function(gauss_beam, -5, 5, 512, "gauss")
     plt.show()

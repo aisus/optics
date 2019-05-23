@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.09.0 (MiKTeX 2.9.6880 64-bit)  (format=lualatex 2019.4.14)  14 APR 2019 18:25
+This is LuaTeX, Version 1.09.0 (MiKTeX 2.9.6880 64-bit)  (format=lualatex 2019.4.14)  17 APR 2019 11:03
  restricted system commands enabled.
 **kursach.tex
 (./kursach.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.834 seconds
+luaotfload | main : initialization completed in 0.830 seconds
 
 ("C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/tex/latex/extsizes/extarticle
 .cls"
@@ -1310,45 +1310,45 @@ Overfull \hbox (28.94585pt too wide) in paragraph at lines 307--308
  []
 
 [2]
-Overfull \hbox (22.82489pt too wide) in paragraph at lines 352--353
+Overfull \hbox (22.82489pt too wide) in paragraph at lines 355--356
 []\TU/TimesNewRoman(0)/m/n/12 На ри-сун-ках [][]1[][]-[][]3[][] пр
 ед-став-ле-ны ре-зуль-та-ты пе-ре-се-че-ния л
 у-ча и плос-ко-сти при раз-лич-ных
  []
 
-<images/plane_intersect1.png, id=43, 632.3625pt x 510.9489pt>
+<images/plane_intersect1.png, id=43, 631.6398pt x 535.5207pt>
 File: images/plane_intersect1.png Graphic file (type png)
 <use images/plane_intersect1.png>
-Package luatex.def Info: images/plane_intersect1.png  used on input line 356.
-(luatex.def)             Requested size: 388.37646pt x 313.81459pt.
+Package luatex.def Info: images/plane_intersect1.png  used on input line 359.
+(luatex.def)             Requested size: 388.37646pt x 329.282pt.
 [3]
-<images/plane_intersect2.png, id=60, 608.5134pt x 480.5955pt>
+<images/plane_intersect2.png, id=60, 462.528pt x 389.5353pt>
 File: images/plane_intersect2.png Graphic file (type png)
 <use images/plane_intersect2.png>
-Package luatex.def Info: images/plane_intersect2.png  used on input line 363.
-(luatex.def)             Requested size: 388.37646pt x 306.73674pt.
-<images/plane_intersect3.png, id=61, 576.7146pt x 449.5194pt>
+Package luatex.def Info: images/plane_intersect2.png  used on input line 366.
+(luatex.def)             Requested size: 388.37646pt x 327.10042pt.
+<images/plane_intersect3.png, id=61, 500.8311pt x 460.3599pt>
 File: images/plane_intersect3.png Graphic file (type png)
 <use images/plane_intersect3.png>
-Package luatex.def Info: images/plane_intersect3.png  used on input line 370.
-(luatex.def)             Requested size: 388.37646pt x 302.72658pt.
+Package luatex.def Info: images/plane_intersect3.png  used on input line 373.
+(luatex.def)             Requested size: 388.37646pt x 357.00002pt.
  [4<./images/plane_intersect1.png><./images/plane_intersect2.png>] [5<./images/p
 lane_intersect3.png>]
-Overfull \hbox (7.51926pt too wide) in paragraph at lines 396--397
+Overfull \hbox (7.51926pt too wide) in paragraph at lines 400--401
 []\TU/TimesNewRoman(0)/m/n/12 Ес-ли луч пе-ре-се-ка-ет сфе-
 ру, то для нор-ма-ли в точ-ках пе-ре-се-че-ния 
 име-ем два ва-ри-ан-та:
  []
 
 
-Overfull \hbox (11.50114pt too wide) in paragraph at lines 411--412
+Overfull \hbox (15.50108pt too wide) in paragraph at lines 415--416
 []\TU/TimesNewRoman(0)/m/n/12 Рас-сто-я-ния до пе-ре-се-че-
 ния с ближ-ней и даль-ней сто-ро-на-ми сфе-ры:
  $[]$. 
  []
 
 
-Overfull \hbox (2.91473pt too wide) in paragraph at lines 413--414
+Overfull \hbox (2.91473pt too wide) in paragraph at lines 417--418
 []\TU/TimesNewRoman(0)/m/n/12 На ри-сун-ках [][]4[][]-[][]5[][] пр
 ед-став-ле-ны ре-зуль-та-ты пе-ре-се-че-ния л
 у-ча и сфе-ры при раз-лич-ных
@@ -1357,75 +1357,75 @@ Overfull \hbox (2.91473pt too wide) in paragraph at lines 413--414
 <images/sph_intersect1.png, id=79, 717.6411pt x 500.1084pt>
 File: images/sph_intersect1.png Graphic file (type png)
 <use images/sph_intersect1.png>
-Package luatex.def Info: images/sph_intersect1.png  used on input line 416.
+Package luatex.def Info: images/sph_intersect1.png  used on input line 420.
 (luatex.def)             Requested size: 418.25368pt x 291.47481pt.
 [6]
 <images/sph_intersect2.png, id=95, 607.7907pt x 528.2937pt>
 File: images/sph_intersect2.png Graphic file (type png)
 <use images/sph_intersect2.png>
-Package luatex.def Info: images/sph_intersect2.png  used on input line 423.
+Package luatex.def Info: images/sph_intersect2.png  used on input line 427.
 (luatex.def)             Requested size: 418.25368pt x 363.54765pt.
  [7<./images/sph_intersect1.png><./images/sph_intersect2.png>]
-Overfull \hbox (37.04198pt too wide) in paragraph at lines 474--475
+Overfull \hbox (41.04192pt too wide) in paragraph at lines 479--480
 []\TU/TimesNewRoman(0)/m/n/12 Рас-сто-я-ния до пе-ре-се-че-
 ния с ближ-ней и даль-ней сто-ро-на-ми эл-лип-
 са: $[]$. 
  []
 
-<images/ell_intersect1.png, id=106, 830.3823pt x 642.4803pt>
+<images/ell_intersect1.png, id=106, 462.528pt x 346.896pt>
 File: images/ell_intersect1.png Graphic file (type png)
 <use images/ell_intersect1.png>
-Package luatex.def Info: images/ell_intersect1.png  used on input line 479.
-(luatex.def)             Requested size: 418.25368pt x 323.60199pt.
-<images/ell_intersect2.png, id=107, 740.7675pt x 510.2262pt>
+Package luatex.def Info: images/ell_intersect1.png  used on input line 484.
+(luatex.def)             Requested size: 418.25368pt x 313.70677pt.
+<images/ell_intersect2.png, id=107, 499.3857pt x 393.8715pt>
 File: images/ell_intersect2.png Graphic file (type png)
 <use images/ell_intersect2.png>
-Package luatex.def Info: images/ell_intersect2.png  used on input line 485.
-(luatex.def)             Requested size: 418.25368pt x 288.0837pt.
+Package luatex.def Info: images/ell_intersect2.png  used on input line 490.
+(luatex.def)             Requested size: 418.25368pt x 329.88219pt.
 [8<./images/ell_intersect1.png>] [9<./images/ell_intersect2.png>]
-Overfull \hbox (27.58662pt too wide) in paragraph at lines 521--523
+Overfull \hbox (27.58662pt too wide) in paragraph at lines 526--528
 []\TU/TimesNewRoman(0)/m/n/12 В дан-ной ла-бо-ра-тор-ной р
 а-бо-те бы-ла со-зда-на про-грам-ма, ко-то-рая 
 за-пра-ши-ва-ет па-ра-мет-ры
  []
 
 
-Overfull \hbox (7.48842pt too wide) in paragraph at lines 521--523
+Overfull \hbox (7.48842pt too wide) in paragraph at lines 526--528
 \TU/TimesNewRoman(0)/m/n/12 лу-ча и па-ра-мет-ры по-верх-
 но-сти. Ре-зуль-та-том ра-бо-ты про-грам-мы я
 в-ля-лись ко-ор-ди-на-ты точ-ки
  []
 
 
-Overfull \hbox (7.73256pt too wide) in paragraph at lines 521--523
+Overfull \hbox (7.73256pt too wide) in paragraph at lines 526--528
 \TU/TimesNewRoman(0)/m/n/12 сфе-ра и эл-лип-со-ид. Так-же 
 был ре-а-ли-зо-ван ме-ха-низм отоб-ра-же-ния 
 хо-да лу-чей и по-верх-но-сти
  []
 
 
-Overfull \hbox (11.80779pt too wide) in paragraph at lines 521--523
+Overfull \hbox (11.80779pt too wide) in paragraph at lines 526--528
 \TU/TimesNewRoman(0)/m/n/12 в дву-мер-ном слу-чае. Про-гр
 ам-ма мо-жет отоб-ра-жать па-да-ю-щий, от-ра-ж
 ен-ный и пре-лом-лен-ный
  []
 
 
-Overfull \hbox (45.64272pt too wide) in paragraph at lines 521--523
+Overfull \hbox (45.64272pt too wide) in paragraph at lines 526--528
 \TU/TimesNewRoman(0)/m/n/12 лу-чи. Бы-ли по-стро-ен-ные с
 о-от-вет-ству-ю-щие гра-фи-ки хо-да лу-чей из 
 сред с раз-ны-ми ко-эф-фи-ци-ен-та-ми
  []
 
 
-Overfull \hbox (4.69156pt too wide) in paragraph at lines 521--523
+Overfull \hbox (4.69156pt too wide) in paragraph at lines 526--528
 \TU/TimesNewRoman(0)/m/n/12 пре-лом-ле-ния. С по-мо-щью д
 ан-ной про-грам-мы лег-ко уви-деть, как луч п
 ро-хо-дит че-рез раз-ные
  []
 
 
-Overfull \hbox (3.68669pt too wide) in paragraph at lines 521--523
+Overfull \hbox (3.68669pt too wide) in paragraph at lines 526--528
 \TU/TimesNewRoman(0)/m/n/12 бо-лее плот-ной сре-ды в оп-т
 и-че-ски ме-нее плот-ную. Так-же мож-но уви-д
 еть, что в за-ви-си-мо-сти
@@ -1542,11 +1542,11 @@ Overfull \hbox (0.75565pt too wide) in paragraph at lines 256--257
 ) 
 AED: lastpage setting LastPage
 [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 540.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 540.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 545.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 545.
  (./kursach.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 540.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 540.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 545.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 545.
 Package rerunfilecheck Info: File `kursach.out' has not changed.
 (rerunfilecheck)             Checksum: E99250BB1D9DFFD4CE9227D70C14CACA;1179.
 
@@ -1577,7 +1577,7 @@ ts/cm/cmmi8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmr12.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmr8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on kursach.pdf (17 pages, 463666 bytes).
+Output written on kursach.pdf (17 pages, 432057 bytes).
 
 PDF statistics: 498 PDF objects out of 1000 (max. 8388607)
  318 named destinations out of 1000 (max. 131072)

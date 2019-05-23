@@ -8,8 +8,8 @@ from traceObjects.plane import Plane
 
 def plane_example(ray, n1, n2):
     plane = Plane(
-        normal=[1.0, 0.0, 0.0],
-        radius_vec=[3.0, 2.0, 0.0],
+        normal=[0.5, 0.5, 0.0],
+        radius_vec=[1.0, 2.0, 0.0],
     )
     plane_lgnd = plane.draw("plane")
     ray_lgnd, reflection_lgnd, refraction_lgnd = plane.draw_intersection(ray, n1, n2, "plane")
@@ -46,7 +46,7 @@ if __name__ == "__main__":
         origin=[-1, -1, 0],
         direction=[1, 2, 0]
     )
-    # plane_example(ray, 0.5, 0.5)
-    # circle_example(ray, 1.5, 1)
-    ellipse_example(ray, 1, 1.5)
+    #plane_example(ray, 1.8, 1.5)
+   # circle_example(ray, 1.5, 1)
+    ellipse_example(ray, 1.1, 1.5)
     plt.show()
