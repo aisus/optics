@@ -1,0 +1,8 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Реализация одномерного финитного преобразования Фурье}{5}{section.1}% 
+\contentsline {section}{\numberline {2}Построение графика гауссова пучка}{6}{section.2}% 
+\contentsline {section}{\numberline {3}Численное финитное преобразование Фурье}{10}{section.3}% 
+\contentsline {section}{\numberline {4}Построение функции по варианту}{13}{section.4}% 
+\contentsline {section}{\numberline {5}Построение аналитической функции по варианту}{17}{section.5}% 
+\contentsline {section}{Заключение}{24}{section*.17}% 
+\contentsline {section}{Приложение А Код программы}{25}{section*.18}% 
